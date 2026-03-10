@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor · IT Consultant & Developer</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- mobile navigation toggle -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Victor<span class="dot">.</span></div>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME section -->
+    <section id="home" class="section home">
+      <div class="container home-container">
+        <div class="home-content">
+          <p class="greeting">👋 Hi, I'm</p>
+          <h1>Victor</h1>
+          <h2 class="headline">IT Consultant & Frontend Developer</h2>
+          <p class="intro-text">Second-year IT student at Kirinyaga University, Kenya. I bridge tech and people — from code to consultation.</p>
+          <div class="home-buttons">
+            <a href="#contact" class="btn primary">Let's talk</a>
+            <a href="#" class="btn secondary" id="downloadCV"><i class="fas fa-download"></i> Download CV</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/victor-kim" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/victor-it" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="home-photo">
+          <!-- clear photo of Victor (UI avatar placeholder) -->
+          <img src="https://ui-avatars.com/api/?name=Victor&size=240&length=1&background=0A66C2&color=fff&bold=true&font-size=0.50&rounded=true" alt="Victor portrait" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+          <p>I'm a second-year <strong>Bachelor of Science in Information Technology</strong> student at <strong>Kirinyaga University, Kenya</strong>. My passion lies in using technology to solve everyday problems — whether through frontend development, IT consulting, or hands-on technical support.</p>
+          <p>As an IT Consultant and Specialist, I've helped small businesses and individuals streamline their tech, improve digital workflows, and stay secure. I believe clean code and clear communication go hand in hand.</p>
+          <p>🔍 Currently diving deeper into networking, cybersecurity, and Python — always building, always curious.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS section (cards) -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-html5 skill-icon"></i><span>HTML5</span></div>
+          <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i><span>CSS3</span></div>
+          <div class="skill-card"><i class="fab fa-js skill-icon"></i><span>JavaScript</span></div>
+          <div class="skill-card in-progress"><i class="fas fa-network-wired skill-icon"></i><span>Networking <span class="badge">in progress</span></span></div>
+          <div class="skill-card in-progress"><i class="fas fa-shield-halved skill-icon"></i><span>Cybersecurity <span class="badge">in progress</span></span></div>
+          <div class="skill-card in-progress"><i class="fab fa-python skill-icon"></i><span>Python <span class="badge">in progress</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS section (GitHub project) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="project-card">
+          <i class="fas fa-code-branch project-icon"></i>
+          <h3>StudentHub – Campus Connect</h3>
+          <p>A lightweight web app for Kirinyaga University students to share resources and updates. Built with HTML, CSS, JavaScript and hosted on GitHub Pages.</p>
+          <a href="https://github.com/victor-kim/student-hub" target="_blank" class="btn primary github-btn"><i class="fab fa-github"></i> View repository on GitHub</a>
+        </div>
+        <!-- optional extra GitHub link -->
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="https://github.com/victor-kim" target="_blank" class="github-profile-link"><i class="fab fa-github"></i> Browse my GitHub profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+          <div class="exp-card">
+            <i class="fas fa-briefcase exp-icon"></i>
+            <h3>IT Consultant</h3>
+            <p>Freelance · 2024 – present</p>
+            <small>Advising local businesses on software, hardware, and digital tools. Conduct workshops on digital literacy and basic cybersecurity.</small>
+          </div>
+          <div class="exp-card">
+            <i class="fas fa-server exp-icon"></i>
+            <h3>IT Specialist</h3>
+            <p>Kirinyaga University Tech Support · 2023 – present</p>
+            <small>Provide technical support to students and staff, maintain lab equipment, and assist in network troubleshooting.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY section (responsive grid) -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section-title">Personal Moments</h2>
+        <div class="gallery-grid">
+          <img src="https://picsum.photos/id/1015/400/300" alt="personal photo 1" loading="lazy">
+          <img src="https://picsum.photos/id/1018/400/300" alt="personal photo 2" loading="lazy">
+          <img src="https://picsum.photos/id/1043/400/300" alt="personal photo 3" loading="lazy">
+          <img src="https://picsum.photos/id/1/400/300" alt="personal photo 4" loading="lazy">
+          <img src="https://picsum.photos/id/1025/400/300" alt="personal photo 5" loading="lazy">
+          <img src="https://picsum.photos/id/104/400/300" alt="personal photo 6" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT section + form -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+254700123456">+254 700 123456</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:victor.it@example.com">victor.it@example.com</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254700123456" target="_blank">+254 700 123456</a></p>
+            <div class="social-links" style="justify-content: flex-start;">
+              <a href="https://github.com/victor-kim" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/victor-it" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="demoForm">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <textarea name="message" rows="4" placeholder="Your message"></textarea>
+            <button type="submit" class="btn primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating action buttons -->
+  <div class="floating-buttons">
+    <a href="tel:+254700123456" class="float call" id="callBtn"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/254700123456" target="_blank" class="float whatsapp" id="whatsappBtn"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
+  <!-- small inline for demo: prevent form submit -->
+  <script>
+    document.getElementById('demoForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('📬 Demo: your message would be sent. (no backend)');
+    });
+    // download CV dummy
+    document.getElementById('downloadCV')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('📄 Download CV clicked – placeholder (you can add a real PDF).');
+    });
+  </script>
+</body>
+</html>
