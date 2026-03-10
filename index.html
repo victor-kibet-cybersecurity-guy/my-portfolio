@@ -1,185 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victor · IT Consultant & Developer</title>
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor | IT Consultant & Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- mobile navigation toggle -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">Victor<span class="dot">.</span></div>
-      <ul class="nav-menu" id="nav-menu">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HOME section -->
-    <section id="home" class="section home">
-      <div class="container home-container">
-        <div class="home-content">
-          <p class="greeting"> Hello, I'm</p>
-          <h1>Victor</h1>
-          <h2 class="headline">IT Consultant & Frontend Developer</h2>
-          <p class="intro-text">Second-year IT student at Kirinyaga University, Kenya. I bridge tech and people — from code to consultation.</p>
-          <div class="home-buttons">
-            <a href="#contact" class="btn primary">Let's talk</a>
-            <a href="#" class="btn secondary" id="downloadCV"><i class="fas fa-download"></i> Download CV</a>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/victor-kim" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/victor-it" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="home-photo">
-          <!-- clear photo of Victor (UI avatar placeholder) -->
-          <img src="https://ui-avatars.com/api/?name=Victor&size=240&length=1&background=0A66C2&color=fff&bold=true&font-size=0.50&rounded=true" alt="Victor portrait" class="profile-img">
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-card">
-          <p>I'm a second-year <strong>Bachelor of Science in Information Technology</strong> student at <strong>Kirinyaga University, Kenya</strong>. My passion lies in using technology to solve everyday problems — whether through frontend development, IT consulting, or hands-on technical support.</p>
-          <p>As an IT Consultant and Specialist, I've helped small businesses and individuals streamline their tech, improve digital workflows, and stay secure. I believe clean code and clear communication go hand in hand.</p>
-          <p>🔍 Currently diving deeper into networking, cybersecurity, and Python — always building, always curious.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS section (cards) -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card"><i class="fab fa-html5 skill-icon"></i><span>HTML5</span></div>
-          <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i><span>CSS3</span></div>
-          <div class="skill-card"><i class="fab fa-js skill-icon"></i><span>JavaScript</span></div>
-          <div class="skill-card in-progress"><i class="fas fa-network-wired skill-icon"></i><span>Networking <span class="badge">in progress</span></span></div>
-          <div class="skill-card in-progress"><i class="fas fa-shield-halved skill-icon"></i><span>Cybersecurity <span class="badge">in progress</span></span></div>
-          <div class="skill-card in-progress"><i class="fab fa-python skill-icon"></i><span>Python <span class="badge">in progress</span></span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS section (GitHub project) -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Featured Project</h2>
-        <div class="project-card">
-          <i class="fas fa-code-branch project-icon"></i>
-          <h3>StudentHub – Campus Connect</h3>
-          <p>A lightweight web app for Kirinyaga University students to share resources and updates. Built with HTML, CSS, JavaScript and hosted on GitHub Pages.</p>
-          <a href="https://github.com/victor-kim/student-hub" target="_blank" class="btn primary github-btn"><i class="fab fa-github"></i> View repository on GitHub</a>
-        </div>
-        <!-- optional extra GitHub link -->
-        <div style="text-align: center; margin-top: 1rem;">
-          <a href="https://github.com/victor-kim" target="_blank" class="github-profile-link"><i class="fab fa-github"></i> Browse my GitHub profile</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE section -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-grid">
-          <div class="exp-card">
-            <i class="fas fa-briefcase exp-icon"></i>
-            <h3>IT Consultant</h3>
-            <p>Freelance · 2024 – present</p>
-            <small>Advising local businesses on software, hardware, and digital tools. Conduct workshops on digital literacy and basic cybersecurity.</small>
-          </div>
-          <div class="exp-card">
-            <i class="fas fa-server exp-icon"></i>
-            <h3>IT Specialist</h3>
-            <p>Kirinyaga University Tech Support · 2023 – present</p>
-            <small>Provide technical support to students and staff, maintain lab equipment, and assist in network troubleshooting.</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY section (responsive grid) -->
-    <section id="gallery" class="section">
-      <div class="container">
-        <h2 class="section-title">Personal Moments</h2>
-        <div class="gallery-grid">
-          <img src="https://picsum.photos/id/1015/400/300" alt="personal photo 1" loading="lazy">
-          <img src="https://picsum.photos/id/1018/400/300" alt="personal photo 2" loading="lazy">
-          <img src="https://picsum.photos/id/1043/400/300" alt="personal photo 3" loading="lazy">
-          <img src="https://picsum.photos/id/1/400/300" alt="personal photo 4" loading="lazy">
-          <img src="https://picsum.photos/id/1025/400/300" alt="personal photo 5" loading="lazy">
-          <img src="https://picsum.photos/id/104/400/300" alt="personal photo 6" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT section + form -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Get in touch</h2>
-        <div class="contact-container">
-          <div class="contact-info">
-            <p><i class="fas fa-phone-alt"></i> <a href="tel:+254700123456">+254 700 123456</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:victor.it@example.com">victor.it@example.com</a></p>
-            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254700123456" target="_blank">+254 700 123456</a></p>
-            <div class="social-links" style="justify-content: flex-start;">
-              <a href="https://github.com/victor-kim" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/victor-it" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Victor<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
-          <form class="contact-form" id="demoForm">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Email address" required>
-            <textarea name="message" rows="4" placeholder="Your message"></textarea>
-            <button type="submit" class="btn primary">Send message</button>
-          </form>
         </div>
-      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Victor</h1>
+                    <h2>IT Consultant & Frontend Developer</h2>
+                    <p class="hero-description">Second-year Information Technology student at Kirinyaga University, Kenya. Passionate about creating innovative technology solutions and helping businesses thrive in the digital world.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/254712345678" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="victor-profile.jpg" alt="Victor - IT Consultant">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
     </section>
-  </main>
 
-  <!-- Floating action buttons -->
-  <div class="floating-buttons">
-    <a href="tel:+254700123456" class="float call" id="callBtn"><i class="fas fa-phone-alt"></i></a>
-    <a href="https://wa.me/254700123456" target="_blank" class="float whatsapp" id="whatsappBtn"><i class="fab fa-whatsapp"></i></a>
-  </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>Who I Am</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="victor-about.jpg" alt="About Victor">
+                </div>
+                <div class="about-text">
+                    <h3>IT Student & Technology Enthusiast</h3>
+                    <p>I'm Victor, a dedicated second-year student pursuing a Bachelor of Science in Information Technology at <strong>Kirinyaga University, Kenya</strong>. My journey into the world of technology began with a curiosity about how things work and a desire to solve real-world problems through innovative solutions.</p>
+                    <p>As an IT Consultant and IT Specialist, I help individuals and businesses navigate the ever-evolving digital landscape. Whether it's troubleshooting technical issues, developing web solutions, or providing strategic technology advice, I'm committed to delivering excellence.</p>
+                    <p>My passion lies in creating meaningful impact through technology. I'm constantly learning and expanding my skills to stay ahead in this dynamic field.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Clients Helped</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Link to JS -->
-  <script src="script.js"></script>
-  <!-- small inline for demo: prevent form submit -->
-  <script>
-    document.getElementById('demoForm')?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('📬 Demo: your message would be sent. (no backend)');
-    });
-    // download CV dummy
-    document.getElementById('downloadCV')?.addEventListener('click', (e) => {
-      e.preventDefault();
-      alert('📄 Download CV clicked – placeholder (you can add a real PDF).');
-    });
-  </script>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Skills</span>
+                <h2>What I Do</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Building semantic and accessible web structures with modern HTML5 standards.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Creating beautiful, responsive designs with CSS3 and modern styling techniques.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <span>85%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity and dynamic functionality to web applications.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <span>75%</span>
+                    </div>
+                </div>
+                <div class="skill-card in-progress">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <p>Learning network configuration, troubleshooting, and infrastructure management.</p>
+                    <div class="skill-badge">In Progress</div>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+                </div>
+                <div class="skill-card in-progress">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Exploring security principles, threat detection, and protection strategies.</p>
+                    <div class="skill-badge">In Progress</div>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+                </div>
+                <div class="skill-card in-progress">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Learning Python programming for automation, data analysis, and backend development.</p>
+                    <div class="skill-badge">In Progress</div>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 55%;"></div>
+                        </div>
+                        <span>55%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project-1.jpg" alt="Portfolio Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/victor/portfolio" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/victor/portfolio" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2>My Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Present</span>
+                        <h3>IT Consultant</h3>
+                        <p class="timeline-company">Freelance</p>
+                        <p>Providing technology consulting services to individuals and small businesses. Helping clients with digital transformation, software recommendations, and IT strategy development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Present</span>
+                        <h3>IT Specialist</h3>
+                        <p class="timeline-company">Freelance</p>
+                        <p>Offering technical support and solutions including hardware troubleshooting, software installation, network setup, and system maintenance for various clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>BSc Information Technology</h3>
+                        <p class="timeline-company">Kirinyaga University, Kenya</p>
+                        <p>Currently in second year, studying core IT subjects including programming, databases, networking, and system analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2>My Moments</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallery-1.jpg" alt="Gallery Image 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-2.jpg" alt="Gallery Image 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-3.jpg" alt="Gallery Image 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-4.jpg" alt="Gallery Image 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-5.jpg" alt="Gallery Image 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery-6.jpg" alt="Gallery Image 6">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind or need IT consultation? I'm here to help. Reach out through any of the channels below.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Phone</span>
+                                <a href="tel:+254712345678">+254 712 345 678</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <a href="mailto:victor@example.com">victor@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>WhatsApp</span>
+                                <a href="https://wa.me/254712345678" target="_blank">+254 712 345 678</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Location</span>
+                                <p>Kirinyaga, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">Victor<span>.</span></a>
+                    <p>IT Consultant & Frontend Developer based in Kenya.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/254712345678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Victor. All rights reserved. | Designed by Victor  </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+254712345678" class="floating-btn call-btn" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/254712345678" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="Lightbox Image" id="lightboxImage">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
