@@ -1,4 +1,3 @@
-/* ===== CSS Variables ===== */
 :root {
     --primary-color: #2563eb;
     --primary-dark: #1d4ed8;
@@ -1040,7 +1039,7 @@ img {
 }
 
 .call-btn {
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, #b91010, #059669);
 }
 
 .whatsapp-btn {
